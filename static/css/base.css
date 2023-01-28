@@ -1,0 +1,63 @@
+@media print {
+ 
+    html,
+    body {
+
+        /* Hide the whole page */
+        display: none;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html, body{
+    color: #a5a5a5;
+    background-color: #1b1b1b;
+    margin: 0;
+    user-select: none;
+}
+
+:root{
+    --padding_top_text: 20px;
+    --vert_image_height: 400px;
+}
+
+@font-face {
+    font-family: suca;
+    src: url("./Comfortaa-Light.ttf");
+}
+
+.top_text{
+    font-family: 'suca';
+    font-size: 35px;
+    background-color: #111;
+    text-align: center;
+    padding-top: var(--padding_top_text);
+    padding-bottom: var(--padding_top_text);
+    margin-top: 0;
+}
+
+.bottom_text{
+    font-family: 'Comfortaa';
+    font-size: 15px;
+    background-color: #111;
+    text-align: left;
+    padding-top: var(--padding_top_text);
+    padding-bottom: var(--padding_top_text);
+    margin-top: 0;
+    padding-left: 15px;
+}
+
+.img_container{
+    margin: 10px;
+    vertical-align: middle;
+}
+
+#image{
+    height: var(--vert_image_height);
+    margin: 5px;
+}
