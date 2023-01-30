@@ -49,7 +49,7 @@ html, body{
     padding-top: var(--padding_top_text);
     padding-bottom: var(--padding_top_text);
     margin-top: 0;
-    padding-left: 15px;
+    padding: 15px;
 }
 
 .img_container{
@@ -60,4 +60,8 @@ html, body{
 #image{
     height: var(--vert_image_height);
     margin: 5px;
+}
+
+.climateclock{
+    transform: scale(0.93);
 }
