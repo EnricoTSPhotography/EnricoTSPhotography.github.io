@@ -11,13 +11,6 @@
     scrollbar-width: none;
 }
 
-html, body{
-    color: #a5a5a5;
-    background-color: #1b1b1b;
-    margin: 0;
-    user-select: none;
-}
-
 :root{
     --padding_top_text: 20px;
     --vert_image_height: 400px;
@@ -26,6 +19,13 @@ html, body{
 @font-face {
     font-family: comfortaa;
     src: url("./Comfortaa-Light.ttf");
+}
+
+html, body{
+    color: #a5a5a5;
+    background-color: #1b1b1b;
+    margin: 0;
+    user-select: none;
 }
 
 .top_text{
