@@ -3,7 +3,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 document.onkeydown = function (e) {
 
     // disable F12 key
-    if(e.keyCode == 123) {
+    if(e.keyCode == 123){
         return false;
     }
 
@@ -13,12 +13,17 @@ document.onkeydown = function (e) {
     }
 
     // disable J key
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 74){
         return false;
     }
 
     // disable U key
-    if(e.ctrlKey && e.keyCode == 85) {
+    if(e.ctrlKey && e.keyCode == 85){
+        return false;
+    }
+    
+    // disable C key
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 67){
         return false;
     }
 
