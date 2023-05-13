@@ -52,10 +52,42 @@ html, body{
 .img_container{
     margin: 10px;
     vertical-align: middle;
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #image{
     height: var(--vert_image_height);
-    margin: 5px;
 }
 
+* {box-sizing: border-box;}
+.container {
+    margin: 5px;
+    position: relative;
+    align-items: center;
+    max-width: fit-content;
+}
+
+
+.overlay {    
+    margin-bottom: 0.6%;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-family: 'comfortaa';
+    text-align: center;
+  }
+  
+.container:hover .overlay {
+    opacity: 1;
+  }
